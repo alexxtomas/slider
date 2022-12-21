@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  height: 100%;
+}
+
+#logo {
+  object-fit: contain;
+  height: 15rem;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 20rem;
+}
+
+ul li {
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem;
+  color: azure;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background-color: #424242;
+}
+
+.swiper h1 {
+  color: #5d3fd3;
+  font-size: 6rem;
+  text-shadow: 1px 1px 8px #393745;
+}
+
+.swiper-slide {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  text-align: center;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #5d3fd3;
+}
